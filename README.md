@@ -10,8 +10,7 @@ The server-side code has the ability to create chatrooms, list all existing room
 
 Once created chat-rooms store all messages sent to the room as long as they exist. If a chat-room has not been used for more than 7 days, it should be destroyed. The server supports up to 10 concurrent clients.
 
-
-## Server features 
+## Client features 
 The Java chat client has an interface that enables a user to 
 * create a room,
 * list the existing rooms,
