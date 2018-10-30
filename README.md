@@ -26,13 +26,7 @@ Simplechat uses the following technologies and open source projects to work prop
 * [Java] - duh
 
 # Installation
-
-### Development environment 
-Simplechat requires Java and an IDL compiler.
-
-### During development 
-To get the latest development code, checkout the `develop` branch:
-
+Installation details for both use and development are outlined on the wiki.  
 
 ### Testing environment
 This project contains tests and is planned to be developed using TDD. The code for testing is still under development, but I'll update this space with instructions on how to do testing when it's all done.
