@@ -1,1 +1,26 @@
 language: java
+
+# Skip the usual default execution step
+install: true
+
+# Build the Java project with JDK8
+jdk:
+  - oraclejdk8
+
+# Gradle’s dependency management mechanism resolves declared modules
+# and their corresponding artifacts from a binary repository. Once downloaded, 
+# the files will be re-used from the cache. 
+
+# This tells Travis CI explicitly that you want to store and use the Gradle
+# cache and Wrapper for successive invocations of the build.
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+script:
+  - ./gradlew build --scan -s

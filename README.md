@@ -1,13 +1,3 @@
-# Simplechat
-
-
-
-
-
-
-
-
-
 <h1 align="center">Simplechat</h1>
 
 <div align="center">
@@ -49,8 +39,8 @@
 ## Overview
 Simplechat is a chatroom application developed in order to explore the networking aspects of Java with platform-independent states. This is part of coursework to explore the use of middleware for network applications so it does not use sockets for its implementation.
 
-  - Just scan your practitioner's QR code from their ID
-  - You'll be able to add their card to your healthcare deck
+  - Run the client executable file
+  - Join (or create) a chat room
   - Magic
 
 ### Features
@@ -75,16 +65,22 @@ If the user connects to a chatroom all previously sent messages of that room sho
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-HealthDeck requires these tools for development:
+Simplechat requires these tools for development. I highly recommend [Chocolatey](https://chocolatey.org/), a package manager for Windows. It's like `apt-get` for Windows, and removes the hassle of setting environment variables and all that stuff.
+
+- [Java JDK > 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) `choco install jdk8`
+- Gradle `choco install gradle`
 
 - Node > 7 and npm (Recommended: Use [nvm](https://github.com/creationix/nvm))
 - Watchman `brew install watchman`
-- React Native CLI `npm install -g react-native-cli`
-- XCode > 9
-- [JDK > 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [Android Studio and Android SDK](https://developer.android.com/studio/index.html)
+
+
 
 ### Installation
+
+- Make sure you have a copy of Java on your system.
+- The project runs on a Gradle wrapper, so a local install of Gradle isn't actually needed.
+- Run the gradle builds:
+`./gradlew build`
 
 - Clone the repo to a local directory:  
 `git clone https://github.com/UniversityOfSaskatchewanCMPT371/term-project-team-1.git healthdeck`
@@ -98,9 +94,7 @@ HealthDeck requires these tools for development:
 
 This project contains tests and is planned to be developed using TDD. The code for testing is still under development, but I'll update this space with instructions on how to do testing when it's all done.
 
-[//]: # (
 ### Coverage Testing
-
 This space reserved for coverage testing procedures
 
 ```
@@ -108,28 +102,25 @@ Example test suite
 ```
 
 ### Coding style tests
-
 Explanation what these tests test and why
 
 ```
 Give an example
 ```
-### Smoke Testing
 
+### Smoke Testing
 Blurb about smoke tests here
 
 ```
 More examples
 ```
-)
 
 
 ## Built With
-Simplechat uses the following technologies and open source projects to work properly:
+Simplechat is written in [Java] and as such requires the latest JDK to work properly. In addition, the following tools are used for project management:
 
-* [Java] [Jest] and [Enzyme] - for testing 
-* [Firebase] - for database access
-* [React Native] - duh
+* [Travis CI] - for continuous integration
+* [Gradle] - local build automation to make compilation easier
 
 ## Versioning
 [SemVer](http://semver.org/) is used for versioning. Development is in its early stages, so stay tuned for future releases!
@@ -145,10 +136,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](../LICENSE
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-   [Jest]: <https://jestjs.io/>
-   [Enzyme]: <https://github.com/airbnb/enzyme>
-   [Firebase]: <https://firebase.google.com/>
-   [React Native]: <https://facebook.github.io/react-native/>
+   [Gradle]: <https://gradle.org/>
+   [Travis CI]: <https://travis-ci.com/>
+   [Java]: <https://www.oracle.com/java/>
 
    [Pineda]: <mailto:jay.p@usask.ca>
 

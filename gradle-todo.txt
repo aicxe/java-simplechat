@@ -1,0 +1,15 @@
+client
+
+compile source code
+build jar
+build exe
+
+server
+
+compile source code
+build jar
+build exe
+
+build idlj files
+make javadoc
+run tests
