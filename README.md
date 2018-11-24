@@ -10,8 +10,8 @@
 <br />
 <div align="center">
   <!-- Build Status -->
-  <a href="https://travis-ci.com/UniversityOfSaskatchewanCMPT371/term-project-team-1">
-    <img src="https://img.shields.io/travis/com/UniversityOfSaskatchewanCMPT371/term-project-team-1/ID3Testing.svg"
+  <a href="https://travis-ci.com/aicxe/java-simplechat">
+    <img src="https://img.shields.io/travis/com/aicxe/java-simplechat/master.svg"
       alt="Build Status" />
   </a>
   <!-- Test Coverage -->
@@ -20,18 +20,18 @@
       alt="Test Coverage" />
   </a>
   <!-- Stars -->
-  <a href="https://github.com/UniversityOfSaskatchewanCMPT371/term-project-team-1/stargazers">
-    <img src="https://img.shields.io/github/stars/UniversityOfSaskatchewanCMPT371/term-project-team-1.svg"
+  <a href="https://github.com/aicxe/java-simplechat/stargazers">
+    <img src="https://img.shields.io/github/stars/aicxe/java-simplechat.svg"
       alt="Stars" />
   </a>
   <!-- Issues -->
-  <a href="https://github.com/UniversityOfSaskatchewanCMPT371/term-project-team-1/issues">
-    <img src="https://img.shields.io/github/issues/UniversityOfSaskatchewanCMPT371/term-project-team-1.svg"
+  <a href="https://github.com/aicxe/java-simplechat/issues">
+    <img src="https://img.shields.io/github/issues/aicxe/java-simplechat.svg"
       alt="Issues" />
   </a>
   <!-- License -->
-  <a href="https://github.com/UniversityOfSaskatchewanCMPT371/term-project-team-1/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/UniversityOfSaskatchewanCMPT371/term-project-team-1.svg"
+  <a href="https://github.com/aicxe/java-simplechat/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/aicxe/java-simplechat.svg"
       alt="Stars" />
   </a>
 </div>
