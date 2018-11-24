@@ -1,5 +1,11 @@
 language: java
 
+# This temporarily sets permission 755 to the gradle wrapper gradlew on 
+# the Travis build. As a double-bolt measure, the permission has also been 
+# granted to gradlew on the repo, so this line is here just in case.
+before_install:
+ - chmod +x gradlew
+
 # Skip the usual default execution step
 install: true
 
@@ -11,7 +17,7 @@ jdk:
 # and their corresponding artifacts from a binary repository. Once downloaded, 
 # the files will be re-used from the cache. 
 
-# This tells Travis CI explicitly that you want to store and use the Gradle
+# This tells Travis CI explicitly that I want to store and use the Gradle
 # cache and Wrapper for successive invocations of the build.
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
