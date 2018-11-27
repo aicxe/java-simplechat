@@ -1,0 +1,17 @@
+/**
+ *
+ * @author Jay Pineda
+ */
+
+module ChatroomApp {
+
+	interface Chatroom {
+    	long add(in long a, in long b);
+    	oneway void shutdown();
+	};
+  
+};
+
+
+
+

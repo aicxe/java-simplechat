@@ -82,13 +82,32 @@ Simplechat requires these tools for development. I highly recommend [Chocolatey]
 - Run the gradle builds:
 `./gradlew build`
 
-- Clone the repo to a local directory:  
-`git clone https://github.com/UniversityOfSaskatchewanCMPT371/term-project-team-1.git healthdeck`
-- Go to your project's root folder and run `npm install`.
-- blah blah gradle
-- Create a `.env` file to store all your configuration constants. Remember to not commit this file, since it can store sensible information of your product.
-- Run `react-native run-ios` or `react-native run-android` to start the application!
+## Compiling the server
+- `cd` to the `SimplechatServer\src\simplechatserver` directory
+- Run the Java compiler on `StartServer.java`:
+`javac StartServer.java ChatroomApp/*.java`
+- Correct any errors in your file and recompile if necessary.
+- The files `StartServer.class` and `ChatroomObj.class` are generated in the `Chatroom`directory.
 
+## Compiling the client
+- `cd` to the `SimplechatClient\src\simplechatclient` directory
+- Run the Java compiler on `StartClient.java`: 
+`javac StartClient.java ChatroomApp/*.java`
+- The `StartClient.class` file is generated to the `Chatroom` directory. 
+
+## Running the server
+(Gradle IDL thing here)
+(- Gradle handles the IDL compilation:
+`./gradlew buildIDL`)
+- Compile the IDL file to convert the interface to the Java implementation:
+`idlj -fall Chatroom.idl`
+- On a separate shell, start the ORB server:
+`start orbd -ORBInitialPort 1337`
+- Start the Simplechat server:
+`java StartServer -ORBInitialPort 1337 -ORBInitialHost localhost`
+
+## Running the client
+- Copy the created `ChatroomApp` folder from the IDL compilation to `SimplechatClient\src`
 
 ## Running the tests
 
